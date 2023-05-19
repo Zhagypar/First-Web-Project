@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>B-Bank</title>
+    <link rel="stylesheet" href="/Sign-Up-Page/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Log In</title>
 </head>
 <body>
     <main>
-        <h1 id="caption">Log In</h1>
-        <div id="logIn">
-            <form action="" method="post">
-                <input class="inputData positionDown" type="text" placeholder="User Name" name="userName" required>
-                <input id="pswInput" class="inputData positionDown" type="password" placeholder="Password" name="password" required>
-                <div class="positionDown">
-                    <label id="pswdStateDesc" for="showPswd">Show Password</label>
-                    <input id="showPswd" type="checkbox" name="showPswd" onchange="updatePswdState()">
-                </div>
-            </form>
+        <div class="btnWrapper">
+            <button class="mainBtn submitBtn" form="mainForm" type="submit">Submit!</button>
+            <button class="mainBtn resetBtn" form="mainForm" type="reset">Reset</button>
+        </div>
+        <div class="wrapper">
+            <h1>Log In</h1>
+            <div>
+                <form action="" method="post">
+                    <label class="inputLabel">
+                        Your Email Address
+                        <input class="inputData" type="email" placeholder="Your Email" name="userEmail" required>
+                    </label>
+                    <label class="inputLabel">
+                        Your Password
+                        <input id="pswInput" class="inputData" type="password" placeholder="Password" name="password" required>
+                    </label>
+                    <div>
+                        <label for="showPswd" class="inputLabel"><span id="pswdStateDesc">Show</span> Password</label>
+                        <input id="showPswd" type="checkbox" name="showPswd" onchange="updatePswdState()">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 

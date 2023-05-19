@@ -6,12 +6,12 @@ let shown = false;
 function updatePswdState(){
     if(shown === false){
         shown = true;
-        pswdStateDesc.innerText = "Hide Password";
+        pswdStateDesc.innerText = "Hide";
         pswInput.setAttribute("type", "text");
     }
     else{
         shown = false;
-        pswdStateDesc.innerText = "Show Password";
+        pswdStateDesc.innerText = "Show";
         pswInput.setAttribute("type", "password");
     }
 }
