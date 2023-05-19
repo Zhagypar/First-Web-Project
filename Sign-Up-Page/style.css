@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+h1 {
+    font-size: 2.5em;
+}
+label {
+    display: block;
+    margin: 10vh 0 0 0;
+    font-size: 2em;
+    transition: 1s;
+}
+#wrapper {
+    width: 30vw;
+    height: 90vh;
+    margin: 5vh auto;
+    border: 1px solid black;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+input {
+    width: 100%;
+    font-size: 0.8em;
+}
+#btnWrapper {
+    position: absolute;
+    top: 40vh;
+    right: 0vw;
+    width: 30vw;
+}
+button {
+    width: 15vw;
+    height: 10vh;
+    font-size: 2em;
+    border-radius: 2vw;
+    transition: 1s;
+}
+#resetBtn {
+    margin-top: 2vw;
+}
+#resetBtn:hover {
+    background-color: black;
+    color: red;
+}
+#submitBtn:hover {
+    background-color: black;
+    color: rgb(7, 173, 32);
+}
+label:hover {
+    color: rgb(139, 107, 255);
+}
+input:focus {
+    box-shadow: 0.2vh 0.2vh 2vh rgb(45, 187, 74), -0.2vh -0.2vh 2vh rgb(15, 109, 215);
+}
