@@ -12,18 +12,17 @@
 </head>
 <body>
     <main>
-        <div id="btnWrapper">
-            <button form="mainForm" type="submit" id="submitBtn">Submit!</button>
-            <button form="mainForm" type="reset" id="resetBtn">Reset</button>
+        <div class="btnWrapper">
+            <button class="mainBtn submitBtn" form="mainForm" type="submit">Submit!</button>
+            <button class="mainBtn resetBtn" form="mainForm" type="reset">Reset</button>
         </div>
-        <div id="wrapper">
+        <div class="wrapper">
             <h1>Sign Up</h1>
-            <form id="mainForm" action="" method="post">
-                <label>Your Name<input type="text" placeholder="Name" required></label>
-                
-                <label>Your Surname<input  type="text" placeholder="Surname" required></label>
-                <label>Your Number<input  placeholder="Mobile Phone" required></label>
-                <label>Your Address</Address><input  type="text" placeholder="Email" required></label>
+            <form action="" method="post">
+                <label class="inputLabel">Your Name<input class="inputData" type="text" placeholder="Name" required></label>
+                <label class="inputLabel">Your Surname<input class="inputData"  type="text" placeholder="Surname" required></label>
+                <label class="inputLabel">Your Number<input class="inputData"  placeholder="Mobile Phone" required></label>
+                <label class="inputLabel">Your Email Address</Address><input class="inputData" type="email" placeholder="Email" required></label>
             </form>
         </div>
     </main>
